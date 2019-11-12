@@ -1,12 +1,11 @@
 package test.roman;
 
 import dssc.roman.RomanNumeral;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class DecimalToRomanNumeralTest {
+class DecimalToRomanNumeralTest {
 
     @Test
     void zeroIsEmptyString() {
@@ -21,6 +20,11 @@ public class DecimalToRomanNumeralTest {
     @Test
     void twoIsII() {
         check(2, "II");
+    }
+
+    @Test
+    void threeIsIII() {
+        check(3, "III");
     }
 
     private void check(int decimal, String expected) {
